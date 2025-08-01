@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=800&center=true&vCenter=true&width=500&lines=Welcome+to+Permalist!;A+Minimalist+To-Do+App+Built+with+Node.js+and+PostgreSQL)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F15A24&width=600&lines=📝+Permalist+Project+-+Your+Personal+To-Do+Tracker;✅+Add%2C+Track%2C+Edit+Tasks+Easily;🚀+Organized+Tasks%2C+Simplified+Life)
 
 # 📝 Permalist – A Persistent To-Do Web App
 
@@ -37,7 +37,7 @@ permalist/
 ├── views/              # EJS templates
 │   ├── index.ejs
 │   └── partials/
-├── app.js              # Main application server
+├── index.js              # Main application server
 ├── package.json
 ├── README.md
 ```

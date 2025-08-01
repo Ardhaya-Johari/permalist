@@ -1,6 +1,7 @@
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=800&center=true&vCenter=true&width=500&lines=Welcome+to+Permalist!;A+Minimalist+To-Do+App+Built+with+Node.js+and+PostgreSQL)
+
 # 📝 Permalist – A Persistent To-Do Web App
 
-![Permalist Banner]
 
 **Permalist** is a simple yet powerful To-Do List web app built using **Node.js**, **Express**, **EJS**, and **PostgreSQL**. It lets users manage daily tasks — with functionality to **add**, **edit**, and **delete** items — all stored permanently in a PostgreSQL database.
 
@@ -30,15 +31,16 @@
 
 ## 📁 Project Structure
 
+```
 permalist/
-├── public/ # Static assets (CSS, images)
-├── views/ # EJS templates
-│ ├── index.ejs
-│ └── partials/
-├── app.js # Main application server
+├── public/             # Static assets (CSS, images)
+├── views/              # EJS templates
+│   ├── index.ejs
+│   └── partials/
+├── app.js              # Main application server
 ├── package.json
 ├── README.md
-
+```
 
 ---
 
@@ -46,55 +48,89 @@ permalist/
 
 ### 1. Clone the Repo
 
--git clone https://github.com/your-username/permalist.git
--cd permalist
+```bash
+git clone https://github.com/your-username/permalist.git
+cd permalist
+```
 
 ### 2. Install Dependencies
--npm install
 
-### 3.  Set Up PostgreSQL
--CREATE DATABASE permalist;
+```bash
+npm install
+```
 
--CREATE TABLE items (
- id SERIAL PRIMARY KEY,
+### 3. Set Up PostgreSQL
+
+Ensure PostgreSQL is installed and running.
+
+#### Create the Database
+
+```sql
+CREATE DATABASE permalist;
+```
+
+#### Create the Table
+
+```sql
+CREATE TABLE items (
+  id SERIAL PRIMARY KEY,
   title TEXT NOT NULL
 );
+```
 
 ### 4. Configure Your DB Credentials
--const db = new pg.Client({
+
+Open `index.js` and update this block:
+
+```js
+const db = new pg.Client({
   user: "your_pg_username",
   host: "localhost",
   database: "permalist",
   password: "your_pg_password",
   port: 5432,
 });
+```
 
-### 5. Run the index.js
--npm index.js
+### 5. Run the App
+
+```bash
+node index.js
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
+
+---
 
 ## 🧠 How It Works
-/ → Displays the list of items from PostgreSQL
 
-/add → Adds a new item
+- `/` → Displays the list of items from PostgreSQL  
+- `/add` → Adds a new item  
+- `/edit` → Updates an existing item  
+- `/delete` → Removes an item  
 
-/edit → Updates an existing item
+---
 
-/delete → Removes an item
+## 🔮 Future Ideas
 
-### 🔮 Future Ideas
--✅ Task due dates and reminders
+- ✅ Task due dates and reminders  
+- 🧩 User login & personal task lists  
+- 📊 Dashboard with task analytics  
+- 📱 PWA support for mobile devices  
 
--🧩 User login & personal task lists
+---
 
--📊 Dashboard with task analytics
+## 👩‍💻 Author
 
--📱 PWA support for mobile devices
+**Ardhaya Johari** – Full Stack Developer  
+📧 ardhayasaxena3897@gmail.com  
+🌐 [LinkedIn](https://www.linkedin.com/in/ardhaya-johari-819275321/)  
+💻 [GitHub](https://github.com/Ardhaya-Johari)  
 
-### 👩‍💻 Author
-- Ardhaya Johari – Full Stack Developer
-- 📧 ardhayasaxena3897@gmail.com
-- 🌐 LinkedIn
-- 💻 GitHub
+> _"I drink chai while fixing bugs."_ ☕
 
-- <i>"I drink chai while fixing bugs." </i>☕
+---
 
+## 📄 License
+
+MIT License

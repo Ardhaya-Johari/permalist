@@ -1,5 +1,8 @@
-.DS_STORE
-
+Thumbs.db
+package-lock.json
+package.json
+queries.sql
+solution.js
 # Logs
 logs
 *.log

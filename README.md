@@ -96,7 +96,7 @@ const db = new pg.Client({
 
 ```bash
 node index.js
-
+```
 ---
 
 ## 🧠 How It Works

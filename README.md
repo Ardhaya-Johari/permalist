@@ -96,9 +96,6 @@ const db = new pg.Client({
 
 ```bash
 node index.js
-```
-
-Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
 ---
 
